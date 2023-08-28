@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_frontend_responses",
+  "info": {
+    "displayName": "response",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "answer": {
+      "type": "string"
+    },
+    "points": {
+      "type": "decimal"
+    }
+  }
+}

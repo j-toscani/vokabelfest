@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vocabulary_test_responses",
+  "info": {
+    "singularName": "vocabulary-test-response",
+    "pluralName": "vocabulary-test-responses",
+    "displayName": "Vocabulary Test Response"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pupil": {
+      "type": "string",
+      "required": true
+    },
+    "responses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "frontend.response",
+      "required": true
+    }
+  }
+}

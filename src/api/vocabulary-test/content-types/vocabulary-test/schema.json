@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vocabulary_tests",
+  "info": {
+    "singularName": "vocabulary-test",
+    "pluralName": "vocabulary-tests",
+    "displayName": "Vocabulary Test"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "default": "My New Test"
+    },
+    "words": {
+      "type": "component",
+      "repeatable": true,
+      "component": "backend.word",
+      "required": true
+    }
+  }
+}

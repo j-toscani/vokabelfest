@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_backend_words",
+  "info": {
+    "displayName": "word",
+    "icon": "medium"
+  },
+  "options": {},
+  "attributes": {
+    "word": {
+      "type": "string",
+      "required": true
+    },
+    "solution": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
