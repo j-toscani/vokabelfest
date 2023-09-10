@@ -2,7 +2,8 @@
   "collectionName": "components_frontend_responses",
   "info": {
     "displayName": "response",
-    "icon": "check"
+    "icon": "check",
+    "description": ""
   },
   "options": {},
   "attributes": {

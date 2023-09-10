@@ -4,7 +4,8 @@
   "info": {
     "singularName": "vocabulary-test",
     "pluralName": "vocabulary-tests",
-    "displayName": "Vocabulary Test"
+    "displayName": "Vocabulary Test",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

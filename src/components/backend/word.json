@@ -2,7 +2,8 @@
   "collectionName": "components_backend_words",
   "info": {
     "displayName": "word",
-    "icon": "medium"
+    "icon": "medium",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -12,7 +13,8 @@
     },
     "solution": {
       "type": "string",
-      "required": true
+      "required": true,
+      "private": true
     }
   }
 }

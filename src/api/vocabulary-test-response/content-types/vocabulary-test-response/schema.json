@@ -4,7 +4,8 @@
   "info": {
     "singularName": "vocabulary-test-response",
     "pluralName": "vocabulary-test-responses",
-    "displayName": "Vocabulary Test Response"
+    "displayName": "Vocabulary Test Response",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
