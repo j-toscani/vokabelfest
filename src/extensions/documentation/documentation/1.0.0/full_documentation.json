@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-10T20:12:45.488Z"
+    "x-generation-date": "2023-09-21T08:19:05.043Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -500,6 +500,9 @@
               "$ref": "#/components/schemas/FrontendResponseComponent"
             }
           },
+          "class": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -830,6 +833,9 @@
                 "items": {
                   "$ref": "#/components/schemas/FrontendResponseComponent"
                 }
+              },
+              "class": {
+                "type": "string"
               }
             }
           }
