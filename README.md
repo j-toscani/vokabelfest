@@ -54,4 +54,7 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 
 ---
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+# Datenstruktur
+
+![vokabelfest datenstruktur](https://github.com/j-toscani/vokabelfest/assets/51090525/c86dc02f-8230-44e2-968b-db31706717c5)
+
