@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.2](https://github.com/j-toscani/vokabelfest/compare/0.1.1...0.1.2) (2025-05-10)
+
+### Bug Fixes
+
+* try different tagging method ([1339fde](https://github.com/j-toscani/vokabelfest/commit/1339fde167ac2a1b3c001bc5d3adf269b1a5066b))
+
 ## [0.1.1](https://github.com/j-toscani/vokabelfest/compare/0.1.0...0.1.1) (2025-05-10)
 
 ### Bug Fixes
