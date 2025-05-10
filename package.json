@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "App to create and provide Vocabluary tests",
   "scripts": {
-    "release": "release-it"
+    "release": "npm run release --workspaces && release-it"
   },
   "keywords": [
     "astro",
