@@ -29,7 +29,8 @@
 				"esbenp.prettier-vscode",
 				"mtxr.sqltools",
 				"mtxr.sqltools-driver-pg",
-				"github.vscode-github-actions"
+				"github.vscode-github-actions",
+				"astro-build.astro-vscode"
 			]
 		}
 	}
