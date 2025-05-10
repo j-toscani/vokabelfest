@@ -1,0 +1,20 @@
+{
+  "name": "vokabelfest",
+  "version": "0.0.0",
+  "description": "App to create and provide Vocabluary tests",
+  "scripts": {},
+  "keywords": [
+    "astro",
+    "strapi",
+    "school"
+  ],
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "author": "Julian Toscani",
+  "repository": {
+    "url": "https://github.com/j-toscani/vokabelfest"
+  },
+  "license": "ISC"
+}
