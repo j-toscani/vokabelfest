@@ -1,14 +1,18 @@
 {
-  "name": "frontend",
+  "name": "vokabelfest-frontend",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "release": "release-it"
   },
   "dependencies": {
-    "astro": "^5.7.12"
+    "astro": "5.7.12"
+  },
+  "release-it": {
+    "git": false
   }
 }
