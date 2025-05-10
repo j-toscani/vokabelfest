@@ -1,9 +1,9 @@
 {
   "name": "vokabelfest",
   "version": "0.0.0",
-  "description": "App to create and provide Vocabluary tests",
+  "description": "App to create and provide vocabulary tests",
   "scripts": {
-    "release": "npm run release --workspaces && release-it"
+    "release": "release-it"
   },
   "keywords": [
     "astro",

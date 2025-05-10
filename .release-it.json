@@ -5,6 +5,13 @@
         "requireCleanWorkingDir": false
     },
     "plugins": {
+        "@release-it/bumper": {
+            "out": [
+                "package.json",
+                "frontend/package.json",
+                "backend/package.json"
+            ]
+        },
         "@release-it/conventional-changelog": {
             "preset": {
                 "name": "conventionalcommits"

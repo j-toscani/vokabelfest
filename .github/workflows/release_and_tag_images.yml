@@ -31,9 +31,9 @@ jobs:
           password: ${{ env.GITHUB_TOKEN }}
       - name: Pull and retag as latest
         env:
-            image: ${{ env.REGISTRY }}/j-toscani/vokabelfest-${{ matrix.project }}:staging
+            image: ${{ env.REGISTRY }}/j-toscani/vokabelfest-${{ matrix.project }}
         run: |
-          docker pull ${{ env.image }}
-          docker tag ${{ env.image }} vokabelfest-${{ matrix.project }}:${{ github.ref_name }}
-          docker tag ${{ env.image }} vokabelfest-${{ matrix.project }}:latest
+          docker pull ${{ env.image }}:staging
+          docker tag ${{ env.image }}:staging vokabelfest-${{ matrix.project }}:${{ github.ref_name }}
+          docker tag ${{ env.image }}:staging vokabelfest-${{ matrix.project }}:latest
           docker push --all-tags ${{ env.image }}

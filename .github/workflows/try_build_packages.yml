@@ -2,9 +2,6 @@ name: Build projects on PR
 run-name: If there is an attempt to merge new code into main, make shure that projects can be build
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
 
 env:

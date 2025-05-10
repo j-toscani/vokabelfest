@@ -12,8 +12,5 @@
   },
   "dependencies": {
     "astro": "5.7.12"
-  },
-  "release-it": {
-    "git": false
   }
 }
