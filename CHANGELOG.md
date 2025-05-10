@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.1](https://github.com/j-toscani/vokabelfest/compare/0.1.0...0.1.1) (2025-05-10)
+
+### Bug Fixes
+
+* project taggings ([ce2dfd2](https://github.com/j-toscani/vokabelfest/commit/ce2dfd286d6d6830d8925686de563d5a7bf9fd88))
+
 ## 0.1.0 (2025-05-10)
 
 ### Features

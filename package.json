@@ -1,6 +1,6 @@
 {
   "name": "vokabelfest",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "App to create and provide vocabulary tests",
   "scripts": {
     "release": "release-it"
