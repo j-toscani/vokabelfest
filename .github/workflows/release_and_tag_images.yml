@@ -1,0 +1,49 @@
+name: Github Action to Tag and Push images of changed Packages
+run-name: Create images for updated packages to deploy on production
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  REGISTRY: ghcr.io
+on:
+  push:
+    tags: ['vokabelfest-backend@', 'vokabelfest-frontend@']
+
+jobs:
+  retag-to-latest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Print Tag
+        run: | 
+          echo "Running build step for tag: ${{ github.ref_name }}"
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Extract variables for image tagging
+        id: tag
+        run: |
+            IMAGE_VERSION=$(echo ${{ github.ref_name }} | sed 's/.*@//g')
+            IMAGE_NAME=$(echo ${{ github.ref_name }} | sed 's/@.*//g')
+            IMAGE_SCOPE=$(echo $IMAGE_NAME | sed 's/ascend-viewer-//g')
+
+            echo "scope=$IMAGE_SCOPE" >> $GITHUB_OUTPUT
+            echo "version=$IMAGE_VERSION" >> $GITHUB_OUTPUT
+            echo "name=$IMAGE_NAME" >> $GITHUB_OUTPUT
+  
+            echo "$IMAGE_NAME, $IMAGE_VERSION, $IMAGE_SCOPE"
+            echo "${{ github.ref_name }}"
+      - name: Docker log into ${{ env.REGISTRY }}
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ env.GITHUB_TOKEN }}
+      - name: Pull and retag as latest
+        env:
+            image: ${{ env.REGISTRY }}/j-toscani/vokabelfest-${{ steps.tag.outputs.name }}:staging
+        run: |
+          docker pull ${{ env.image }}
+          docker tag ${{ env.image }} vokabelfest-${{ steps.tag.outputs.name }}:${{ steps.tag.outputs.version }}
+          docker tag ${{ env.image }} vokabelfest-${{ steps.tag.outputs.name }}:latest
+          docker push --all-tags ${{ env.image }}
