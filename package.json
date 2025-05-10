@@ -2,7 +2,9 @@
   "name": "vokabelfest",
   "version": "0.0.0",
   "description": "App to create and provide Vocabluary tests",
-  "scripts": {},
+  "scripts": {
+    "release": "release-it"
+  },
   "keywords": [
     "astro",
     "strapi",
@@ -16,5 +18,10 @@
   "repository": {
     "url": "https://github.com/j-toscani/vokabelfest"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@release-it/bumper": "^7.0.5",
+    "@release-it/conventional-changelog": "^10.0.1",
+    "release-it": "^19.0.2"
+  }
 }

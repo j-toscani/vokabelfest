@@ -6,9 +6,13 @@
     "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "release": "release-it"
   },
   "dependencies": {
     "astro": "5.7.12"
+  },
+  "release-it": {
+    "git": false
   }
 }
