@@ -11,6 +11,10 @@
     "release": "release-it"
   },
   "dependencies": {
-    "astro": "5.7.12"
+    "astro": "5.7.12",
+    "openapi-fetch": "^0.14.0"
+  },
+  "devDependencies": {
+     
   }
 }
