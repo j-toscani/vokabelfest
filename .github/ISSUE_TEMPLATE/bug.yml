@@ -2,7 +2,7 @@ name: Bug
 title: "[Bug]: "
 labels: ["bug"]
 description: Beschreibt einen Bug, worin er besteht, wann er auftritt und wie eine Lösung aussehen würde
-projects: ["j-toscani/2"]
+projects: ["j-toscani/6"]
 body:
 - type: dropdown
   attributes:

@@ -2,7 +2,7 @@ name: Epic
 title: "[Epic]: "
 labels: ["enhancement"]
 description: Sammlung von kleineren Issues die zusammen gehören
-projects: ["j-toscani/2"]
+projects: ["j-toscani/6"]
 body:
 - type: textarea
   attributes: 

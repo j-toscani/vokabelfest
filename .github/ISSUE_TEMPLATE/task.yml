@@ -2,7 +2,7 @@ name: Task
 title: "[Task]: "
 labels: ["enhancement"]
 description: Definiert einen Arbeitsauftrag mit genauen Informationen, Akzeptanzkriterien, Abhängigkeiten
-projects: ["j-toscani/2"]
+projects: ["j-toscani/6"]
 body:
 - type: textarea
   attributes: 
