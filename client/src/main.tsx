@@ -8,6 +8,8 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Layout from "./Layout.tsx";
 import Home from "./views/Home.tsx";
 import { Auth } from "./views/Auth.tsx";
+import { Student } from "./views/Student.tsx";
+import { Teacher } from "./views/Teacher.tsx";
 
 const router = createBrowserRouter([
   {
@@ -18,12 +20,20 @@ const router = createBrowserRouter([
         index: true,
         Component: Home,
       },
+      {
+        path: "student",
+        Component: Student,
+      },
+      {
+        path: "teacher",
+        Component: Teacher,
+      },
     ],
   },
   {
-    path: '/login',
-    Component: Auth
-  }
+    path: "/login",
+    Component: Auth,
+  },
 ]);
 
 createRoot(document.getElementById("root") as HTMLElement).render(

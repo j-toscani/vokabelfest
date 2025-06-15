@@ -1,11 +1,11 @@
 import { type Route } from 'jsr:@std/http/unstable-route';
 import { catchError } from './lib/effects.ts';
-import { auth, onlyKnownUsers } from './lib/auth.ts';
+import { auth } from './lib/auth.ts';
 
 const routes: Array<Route> = [];
 
 const routesWithMiddleware: Array<Route> = routes.map((route) => {
-	route.handler = catchError(onlyKnownUsers(route.handler));
+	route.handler = catchError(route.handler);
 	return route;
 });
 

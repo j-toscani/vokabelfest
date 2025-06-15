@@ -6,20 +6,20 @@ import { Header } from "./components/Header.tsx";
 import { useSession } from "./client/index.ts";
 
 export default function Layout() {
-  const navigate = useNavigate();
-  const {
-    data: session,
-    isPending,
-    error,
-  } = useSession();
+  // const navigate = useNavigate();
+  // const {
+  //   data: session,
+  //   isPending,
+  //   error,
+  // } = useSession();
 
-  if (isPending) {
-    return null;
-  }
+  // if (isPending) {
+  //   return null;
+  // }
 
-  if (error || !session) {
-    navigate("/login");
-  }
+  // if (error || !session) {
+  //   navigate("/login");
+  // }
 
   return (
     <>
