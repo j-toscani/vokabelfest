@@ -1,0 +1,24 @@
+name: Task
+title: "[Task]: "
+labels: ["enhancement"]
+description: Definiert einen Arbeitsauftrag mit genauen Informationen, Akzeptanzkriterien, Abhängigkeiten
+projects: ["j-toscani/2"]
+body:
+- type: textarea
+  attributes: 
+    label: "Beschreibung"
+    description: "maximal fünf Sätze"
+    placeholder: Um die Performance zu verbessern...
+- type: textarea
+  attributes: 
+    label: "Akzeptanzkriterien"
+    description: "Wenn dieses Punkte erfüllt sind, ist das Issue resolved"
+- type: textarea
+  attributes: 
+    label: "Out of Scope"
+    description: "Dinge, die explizit nicht bedacht/umgesetzt werden sollen"
+- type: textarea
+  attributes: 
+    label: "Abhängigkeiten"
+    description: "Eine Liste die auf Issues verweist, von denen dieses Issue abhängig ist"
+    value: "-"

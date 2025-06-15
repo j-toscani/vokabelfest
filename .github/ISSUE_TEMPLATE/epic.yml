@@ -1,0 +1,19 @@
+name: Epic
+title: "[Epic]: "
+labels: ["enhancement"]
+description: Sammlung von kleineren Issues die zusammen gehören
+projects: ["j-toscani/2"]
+body:
+- type: textarea
+  attributes: 
+    label: "Beschreibung"
+    description: "Was soll umgesetzt werden?"
+    placeholder: Auf allen 200 Seiten soll...
+- type: textarea
+  attributes: 
+    label: "Tasks"
+    description: "Eine Liste von Aufgaben, aus denen dann weitere Issues erstellt werden sollen."
+    placeholder: |
+      - [ ] Step One
+      - [ ] Step Two
+      - [ ] Step Step Three

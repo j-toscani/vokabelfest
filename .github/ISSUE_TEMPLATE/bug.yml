@@ -1,0 +1,31 @@
+name: Bug
+title: "[Bug]: "
+labels: ["bug"]
+description: Beschreibt einen Bug, worin er besteht, wann er auftritt und wie eine Lösung aussehen würde
+projects: ["j-toscani/2"]
+body:
+- type: dropdown
+  attributes:
+    label: Welcher Browser wird verwendet?
+    multiple: true
+    options:
+      - Firefox
+      - Chrome
+      - Safari
+      - Microsoft Edge
+- type: textarea
+  attributes: 
+    label: "Erwartetes Verhalten"
+    description: "Was soll eigentlich passieren?"
+- type: textarea
+  attributes: 
+    label: "Aktuelles verhalten"
+    description: "Was passiert aktuell?"
+- type: textarea
+  attributes: 
+    label: "Mögliche Lösung. (optional)"
+    description: "Wie stellst du dir die Lösung vor? Was wäre ein Workaround?"
+- type: textarea
+  attributes: 
+    label: "Steps to reproduce"
+    description: "Wie kann man den Fehler erzwingen?"
